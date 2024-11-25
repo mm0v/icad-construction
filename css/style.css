@@ -1,0 +1,271 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f3b2d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll when the modal is visible */
+}
+
+.header {
+  background-color: #113636;
+  position: relative;
+}
+
+.logoImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: auto;
+}
+
+.ulLi {
+  list-style: none;
+}
+
+.ulLi > li > a {
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 700;
+  letter-spacing: 1.012px;
+}
+/* 
+.fabars {
+  color: #ffff;
+}
+
+.fabars:hover {
+  color: #ffff;
+}
+
+.fa-xmark {
+  display: none !important;
+} */
+
+.fabars {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+}
+
+.fabars:hover {
+  color: #ffff;
+}
+
+.fabars i.fa-xmark {
+  display: none; /* Initially hide the xmark icon */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -402px; /* Start off-screen */
+  width: 400px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.3);
+  transition: left 0.3s ease; /* Smooth slide-in effect */
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0; /* Bring sidebar into view */
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.number {
+  color: #ffff;
+}
+
+.number:hover {
+  color: #ffff;
+}
+
+.number > h6 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: red;
+  margin: 0 10px;
+}
+
+.darkMode {
+  background-color: #fff;
+  padding: 8px;
+  margin-left: 6px;
+}
+
+.darkMode:hover {
+  background-color: black;
+  color: #ffff;
+}
+
+/* Start Swiper Section */
+
+/* .swiper {
+  max-width: 1200px;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+} */
+
+.sliderSection {
+  background-color: #113636;
+  padding: 60px 0;
+}
+
+.slide {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  color: #ffff;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.project-btn {
+  background-color: #b4ff6f;
+  color: #0f3b2d;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background-color: #a3e05f;
+}
+
+.media {
+  flex: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.media video {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.experience {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #b4ff6f;
+  padding: 0 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.experience span {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: #b4ff6f;
+  color: #0f3b2d;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #a3e05f;
+}
+
+.counter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* End Swiper Section */
+
+/* Start Responsive */
+
+@media (max-width: 576px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 1000px) {
+  
+}
+@media (min-width: 1200px) {
+}
+
+/* End Responsive */
