@@ -12,9 +12,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <nav
-                            class="d-flex justify-content-center p-4 align-items-center text-center">
+                            class="d-flex justify-content-between p-4 align-items-center text-center">
                             <div
-                                class="col-md-8 d-flex justify-content-between align-items-center">
+                                class="col-md-8 xyz d-flex justify-content-between align-items-center">
                                 <div class="imgbox">
                                     <img class="logoImg "
                                         src="./assets/logo.jpg"
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="NavUl">
                                     <ul
-                                        class="d-flex justify-content-center align-items-center ulLi">
+                                        class="d-flex justify-content-center gap-3 align-items-center ulLi">
                                         <li>
                                             <a href="/haqqımızda.html"
                                                 rel="noopener noreferrer">Haqqımızda</a>
@@ -69,13 +69,17 @@
 
                             <div class="sidebar" id="leftSidebar">
                                 <div class="sidebar-content">
-                                    <div class="imgbox">
+                                    <div
+                                        class="imgbox d-flex justify-content-between align-items-center">
                                         <img class="logoImg "
-                                            src="./assets/logo.jpg"
-                                            alt="logo">
+                                            src="./assets/logo.jpg" alt="logo">
+                                        <div> <button onclick="toggleSidebar()">
+                                                <i
+                                                    class="fa-solid fa-xmark"></i></button></div>
                                     </div>
+
                                     <ul
-                                        class="d-flex flex-column justify-content-center align-items-center mt-4 ulLi">
+                                        class="d-flex flex-column justify-content-start align-items-start sidebarUl mt-4 ulLi">
                                         <li>
                                             <a href="/haqqımızda.html"
                                                 rel="noopener noreferrer">Haqqımızda</a>
@@ -97,11 +101,44 @@
                                                 rel="noopener noreferrer">Əlaqə</a>
                                         </li>
                                     </ul>
-                                    <button onclick="toggleSidebar()">Close
-                                        Sidebar</button>
+                                    <div class="text-start">
+                                        <p class="aboutSidebar">
+                                            İcad Construction hər zaman
+                                            müştəri məmnuniyyətini prioritet
+                                            hesab edərək, hər addımda sizi
+                                            heyran edəcək və yaradıcı ideyaları
+                                            ilə fərqlənəcək həllər təqdim edir.
+                                        </p>
+                                        <div class="imageSidebar">
+                                            <div
+                                                class="imgbox imageSidebar1and2">
+                                                <img src="./assets/1 (1).jpg"
+                                                    alt="homeImage">
+                                            </div>
+                                            <div
+                                                class="imgbox imageSidebar1and2">
+                                                <img src="./assets/1 (2).jpg"
+                                                    alt="homeImage">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="address">
+                                            Ünvanımız <br> ( Blue Residence,
+                                            6-cı
+                                            mərtəbə, Noyabr Avenue 8, Nargilə
+                                            dairəsi )
+                                            <br> <br>
+                                            Telefon <br> ( 051 951 4444 - 051
+                                            952
+                                            4444 - 051 962 4444 )
+                                        </p>
+                                        <p
+                                            class="privacy d-flex justify-content-start align-items-center">Icad
+                                            Construction | Bütün
+                                            hüquqları qorunur</p>
+                                    </div>
                                 </div>
                             </div>
-
                         </nav>
                     </div>
                 </div>
