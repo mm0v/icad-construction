@@ -335,17 +335,49 @@ body {
   box-shadow: 1px 5px 236px -32px rgba(0, 0, 0, 0.68);
 }
 
-
 /* End Tikinti */
 
 /* Start Haqqımızda */
 .twoImageHaq .imgbox img {
-  width: 200px;
+  width: 210px;
+  /* padding: 10px 20px; */
   margin: 2px;
 }
 
+.layiheSec {
+  padding: 30px 20px;
+  margin-top: 10px;
+}
 
-/* Start Haqqımızda */
+/* End Haqqımızda */
+
+/* Start cardNumber */
+.cardNumber {
+  padding: 20px;
+  border: 1px solid #ddd;
+  color: #272222;
+  border-radius: 8px;
+  background: #cbf050;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+}
+
+.cardNumber h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.cardNumber p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+.imgboxCardNum img {
+  max-width: 200px;
+  padding: 10px;
+}
+/* End cardNumber */
 
 /* Start Responsive */
 
@@ -364,6 +396,44 @@ body {
   .experience p {
     font-size: 0.48rem;
     margin: 2px 0;
+  }
+  .cardNumber {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .numLay > h1 {
+    font-size: 1.2rem;
+  }
+  .numLay > p {
+    font-size: small;
+  }
+  .layi h1 {
+    font-size: 14px;
+  }
+  .layi p {
+    font-size: 12px;
+  }
+  .feal {
+    font-size: 8px;
+  }
+  .twoImageHaq .imgbox img {
+    max-width: 150px;
+  }
+}
+
+/* company */
+
+.company > img {
+  max-width: 150px;
+}
+/* company */
+
+@media (max-width: 576px) {
+  .company {
+    padding: 10px 0;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center !important;
   }
 }
 @media (max-width: 992px) {
