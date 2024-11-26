@@ -23,17 +23,17 @@
                 <div class="row">
                     <div class="col-md-12">
                         <nav
-                            class="d-flex justify-content-center p-4 align-items-center text-center">
+                            class="d-flex justify-content-between p-4 align-items-center text-center">
                             <div
-                                class="col-md-8 d-flex justify-content-between align-items-center">
+                                class="col-md-8 xyz d-flex justify-content-between align-items-center">
                                 <div class="imgbox">
                                     <img class="logoImg "
                                         src="./assets/logo.jpg"
                                         alt="logo">
                                 </div>
-                                <div>
+                                <div class="NavUl">
                                     <ul
-                                        class="d-flex justify-content-center align-items-center ulLi">
+                                        class="d-flex justify-content-center gap-3 align-items-center ulLi">
                                         <li>
                                             <a href="/haqqımızda.html"
                                                 rel="noopener noreferrer">Haqqımızda</a>
@@ -56,6 +56,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                             </div>
                             <div class="col-md-4">
                                 <div>
@@ -79,13 +80,76 @@
 
                             <div class="sidebar" id="leftSidebar">
                                 <div class="sidebar-content">
-                                    <h2>Sidebar Menu</h2>
-                                    <p>Content goes here...</p>
-                                    <button onclick="toggleSidebar()">Close
-                                        Sidebar</button>
+                                    <div
+                                        class="imgbox d-flex justify-content-between align-items-center">
+                                        <img class="logoImg "
+                                            src="./assets/logo.jpg" alt="logo">
+                                        <div> <button onclick="toggleSidebar()">
+                                                <i
+                                                    class="fa-solid fa-xmark"></i></button></div>
+                                    </div>
+
+                                    <ul
+                                        class="d-flex flex-column justify-content-start align-items-start sidebarUl mt-4 ulLi">
+                                        <li>
+                                            <a href="/haqqımızda.html"
+                                                rel="noopener noreferrer">Haqqımızda</a>
+                                        </li>
+                                        <li>
+                                            <a href="/xidmətlərimiz.html"
+                                                rel="noopener noreferrer">Xidmətlərimiz</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layihələrimiz.html"
+                                                rel="noopener noreferrer">Layihələrimiz</a>
+                                        </li>
+                                        <li>
+                                            <a href="/kataloq.html"
+                                                rel="noopener noreferrer">Kataloq</a>
+                                        </li>
+                                        <li>
+                                            <a href="/əlaqə.html"
+                                                rel="noopener noreferrer">Əlaqə</a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-start">
+                                        <p class="aboutSidebar">
+                                            İcad Construction hər zaman
+                                            müştəri məmnuniyyətini prioritet
+                                            hesab edərək, hər addımda sizi
+                                            heyran edəcək və yaradıcı ideyaları
+                                            ilə fərqlənəcək həllər təqdim edir.
+                                        </p>
+                                        <div class="imageSidebar">
+                                            <div
+                                                class="imgbox imageSidebar1and2">
+                                                <img src="./assets/1 (1).jpg"
+                                                    alt="homeImage">
+                                            </div>
+                                            <div
+                                                class="imgbox imageSidebar1and2">
+                                                <img src="./assets/1 (2).jpg"
+                                                    alt="homeImage">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="address">
+                                            Ünvanımız <br> ( Blue Residence,
+                                            6-cı
+                                            mərtəbə, Noyabr Avenue 8, Nargilə
+                                            dairəsi )
+                                            <br> <br>
+                                            Telefon <br> ( 051 951 4444 - 051
+                                            952
+                                            4444 - 051 962 4444 )
+                                        </p>
+                                        <p
+                                            class="privacy d-flex justify-content-start align-items-center">Icad
+                                            Construction | Bütün
+                                            hüquqları qorunur</p>
+                                    </div>
                                 </div>
                             </div>
-
                         </nav>
                     </div>
                 </div>
@@ -96,86 +160,104 @@
             <section class="sliderSection">
                 <div class="container">
                     <div class="row">
-                        <!-- <div class="col-md-12"> -->
-                        <!-- Slide 1 -->
-                        <div class="slide active">
-                            <div class="text">
-                                <h1>Xəyallarınızı gerçəkləşdiririk</h1>
-                                <p>Füsunkarlığı Nümayiş Etməyə
-                                    Gəldik</p>
-                                <button
-                                    class="project-btn">LAYİHƏLƏRİMİZ
-                                    →</button>
-                            </div>
-                            <div class="media">
-                                <video autoplay muted loop>
-                                    <source src="./assets/vidio/5v.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the
-                                    video tag.
-                                </video>
-                                <div class="experience">
-                                    <span>6</span>
-                                    <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                        <div class="col-md-8">
+                            <div class="slideSec">
+                                <!-- Slide 1 -->
+                                <div class="slide active">
+                                    <div>
+                                        <div class="text wordOfSlide">
+                                            <h1>Xəyallarınızı
+                                                gerçəkləşdiririk</h1>
+                                            <p>Füsunkarlığı Nümayiş Etməyə
+                                                Gəldik</p>
+                                            <button
+                                                class="project-btn">LAYİHƏLƏRİMİZ
+                                                →</button>
+                                        </div>
+                                        <div class="media">
+                                            <video autoplay muted loop>
+                                                <source
+                                                    src="./assets/vidio/5v.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support
+                                                the
+                                                video tag.
+                                            </video>
+                                            <div class="experience">
+                                                <span>6</span>
+                                                <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- Slide 2 -->
-                        <div class="slide">
-                            <div class="text">
-                                <h1> Tikinti Xidmətləri</h1>
-                                <p>Estetik dizaynlarla rahatlıq
-                                    qazanın</p>
-                                <button
-                                    class="project-btn">LAYİHƏLƏRİMİZ
-                                    →</button>
-                            </div>
-                            <div class="media">
-                                <video autoplay muted loop>
-                                    <source src="./assets/vidio/10v.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the
-                                    video tag.
-                                </video>
-                                <div class="experience">
-                                    <span>10</span>
-                                    <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                                <!-- Slide 2 -->
+                                <div class="slide ">
+                                    <div>
+                                        <div class="text wordOfSlide">
+                                            <h1> Tikinti Xidmətləri</h1>
+                                            <p>Estetik dizaynlarla rahatlıq
+                                                qazanın</p>
+                                            <button
+                                                class="project-btn">LAYİHƏLƏRİMİZ
+                                                →</button>
+                                        </div>
+                                        <div class="media">
+                                            <video autoplay muted loop>
+                                                <source
+                                                    src="./assets/vidio/10v.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support
+                                                the
+                                                video tag.
+                                            </video>
+                                            <div class="experience">
+                                                <span>10</span>
+                                                <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <!-- Slide 3 -->
-                        <div class="slide">
-                            <div class="text">
-                                <h1> Dizayn Xidmətləri</h1>
-                                <p> Füsunkarlığı Nümayiş Etdirməyə
-                                    Gəldik</p>
-                                <button
-                                    class="project-btn">LAYİHƏLƏRİMİZ
-                                    →</button>
-                            </div>
-                            <div class="media">
-                                <video autoplay muted loop>
-                                    <source src="./assets/vidio/11v.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the
-                                    video tag.
-                                </video>
-                                <div class="experience">
-                                    <span>10</span>
-                                    <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                                <!-- Slide 3 -->
+                                <div class="slide ">
+                                    <div>
+                                        <div class="text wordOfSlide">
+                                            <h1> Dizayn Xidmətləri</h1>
+                                            <p> Füsunkarlığı Nümayiş Etdirməyə
+                                                Gəldik</p>
+                                            <button
+                                                class="project-btn">LAYİHƏLƏRİMİZ
+                                                →</button>
+                                        </div>
+                                        <div class="media">
+                                            <video autoplay muted loop>
+                                                <source
+                                                    src="./assets/vidio/11v.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support
+                                                the
+                                                video tag.
+                                            </video>
+                                            <div class="experience">
+                                                <span>10</span>
+                                                <p>İLLƏRİN TƏCRÜBƏSİ</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                            </div>
+                            <!-- Slide Controls -->
+                            <div class="controls">
+                                <button class="prev">&larr;</button>
+                                <span class="counter">1 / 2</span>
+                                <button class="next">&rarr;</button>
                             </div>
                         </div>
-
-                        <!-- Slide Controls -->
-                        <div class="controls">
-                            <button class="prev">&larr;</button>
-                            <span class="counter">1 / 2</span>
-                            <button class="next">&rarr;</button>
+                        <div class="col-md-4 mt-4 pt-4">
+                            <h1>AAA</h1>
                         </div>
-                        <!-- </div> -->
                     </div>
                 </div>
             </section>
