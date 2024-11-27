@@ -428,6 +428,14 @@ body {
 }
 /* company */
 
+/* footer */
+.footer {
+  color: #ffff;
+  background-color: #08333c;
+}
+
+/* footer */
+
 @media (max-width: 576px) {
   .company {
     padding: 10px 0;
