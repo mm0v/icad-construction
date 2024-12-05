@@ -28,6 +28,8 @@ body {
 
 .header {
   background-color: #113636;
+  background-image: url("../assets/bg.png");
+
   position: relative;
 }
 
@@ -177,6 +179,10 @@ body {
 
 .sliderSection {
   background-color: #113636;
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 0 40px;
 }
 
@@ -428,10 +434,40 @@ body {
 }
 /* company */
 
+/* Haqqimizda */
+
+.firstSecMain {
+  background-color: #113636;
+  background-image: url("../assets/bg.png");
+  padding: 40px 0;
+}
+
+.haqq > h1 {
+  color: #ffff;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.fealSahe {
+  background-color: #cbf050;
+  color: #113636;
+  max-width: 500px;
+  padding: 20px;
+  font-weight: 700;
+}
+
+/* .haqqStory {
+} */
+/* Haqqimizda */
+
 /* footer */
 .footer {
   color: #ffff;
   background-color: #08333c;
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* footer */
