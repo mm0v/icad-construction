@@ -460,6 +460,17 @@ body {
 } */
 /* Haqqimizda */
 
+/* Elaqe */
+.xyzd {
+  min-height: 320px;
+  padding: 30px 16px;
+}
+.telNum {
+  color: #333;
+}
+/* Elaqe */
+
+
 /* footer */
 .footer {
   color: #ffff;
@@ -478,6 +489,9 @@ body {
     display: flex;
     margin-top: 8px;
     justify-content: center !important;
+  }
+  .haqq > h1 {
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 992px) {
