@@ -83,3 +83,35 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(section);
 // cardNumber
+
+// disable inspect
+// Disable right-click
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && event.key === "I") ||
+    (event.ctrlKey && event.shiftKey && event.key === "J") ||
+    (event.ctrlKey && event.key === "U")
+  ) {
+    event.preventDefault();
+  }
+});
+
+// Detect opening of DevTools
+const devtoolsCheck = setInterval(() => {
+  const threshold = 160; // Minimum width or height of DevTools
+  const { outerWidth, outerHeight, innerWidth, innerHeight } = window;
+  if (
+    outerWidth - innerWidth > threshold ||
+    outerHeight - innerHeight > threshold
+  ) {
+    alert("Developer tools are open. Please close them to continue.");
+    clearInterval(devtoolsCheck); // Optional: Stop checking after detecting once
+  }
+}, 1000);
+// disable inspect
