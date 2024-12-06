@@ -482,13 +482,13 @@ body {
 .colsOfImgCatalog {
   text-align: center;
 }
-
+/* 
 .imgForCatalog {
-  height: 100%;
-  width: 100%;
-}
+} */
 .imgForCatalog > img {
   width: 320px;
+  height: 100%;
+
 }
 /* Catalog */
 
