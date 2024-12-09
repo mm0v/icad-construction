@@ -357,6 +357,15 @@ body {
 
 /* End Haqqımızda */
 
+/* Start Xidmet */
+
+.sevenBox > a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* End Xidmet */
+
 /* Start cardNumber */
 .cardNumber {
   padding: 20px;
@@ -488,7 +497,6 @@ body {
 .imgForCatalog > img {
   width: 320px;
   height: 100%;
-
 }
 /* Catalog */
 
