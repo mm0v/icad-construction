@@ -157,6 +157,7 @@ body.dark-mode {
 .darkMode {
   background-color: #ffff;
   cursor: pointer;
+  margin: 0 6px;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -386,8 +387,13 @@ body.dark-mode .imgboxCard img {
   border: 1px solid #ddd;
   color: #272222;
   border-radius: 8px;
-  background: #cbf050;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   margin: 2px;
 }
 
@@ -505,6 +511,11 @@ body.dark-mode .imgboxCard img {
 .colsOfImgCatalog {
   text-align: center;
 }
+
+.icad-catalog {
+  max-width: 300px;
+}
+
 .icad-catalog > a {
   color: #ffff;
   text-decoration: none;
@@ -513,7 +524,7 @@ body.dark-mode .imgboxCard img {
 .imgForCatalog {
 } */
 .imgForCatalog > img {
-  width: 320px;
+  width: 280px;
   height: 100%;
 }
 /* Catalog */
